@@ -7,7 +7,7 @@ from sklearn.preprocessing import LabelEncoder
 from sklearn.linear_model import LogisticRegression
 
 # Reading and import the file
-csv_file = pd.read_csv('./set/IRIS.csv')
+csv_file = pd.read_csv('./IrisFlower_ML/set/IRIS.csv')
 df = csv_file
 
 # Data presentation
@@ -15,7 +15,6 @@ df.head()
 
 # Sum all the columns 
 df['soma'] = df.sum(axis=1)
-df
 
 # Extraction of sl, sw, pl, pw e s
 so, s = df[['soma']].values, df[['species']].values
@@ -53,7 +52,7 @@ def class_iris():
         class_temp = le.inverse_transform(class_temp)
         
         # Presents classification 
-        print(f"\nThe classification of this Iris-flower {temp.ravel()[0]} is: {class_temp[0]}\n")
+        print(f"/nThe classification of this Iris-flower {temp.ravel()[0]} is: {class_temp[0]}/n")
         
         # ask if you want to continue or exit of this aplication 
         ask = input("You want to made a new classification (y/n): ") == 'y'    

@@ -29,4 +29,4 @@ This is a Machine Learning model wich the classic case of **[Iris-Flower](https:
 - I recommend that you run this algorithm on a Jupyter notebook environment in your machine or browser.
 - But you can run it on your terminal if you have Python on your computer. 
   - In your terminal, go at the path were your save the files.
-  - **Run (python app.py)**
+  - **Run (python IrisFlower_ML)**
